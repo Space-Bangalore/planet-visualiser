@@ -8,5 +8,6 @@ urlpatterns = patterns('',
     url(r'^systems/(?P<pk>[^/]+)/$', SystemDetail.as_view(), name='system-detail'),
     url(r'^planets/$', PlanetList.as_view(), name='planet-list'),
     url(r'^planets/(?P<pk>[^/]+)/$', PlanetDetail.as_view(), name='planet-detail'),
+    url(r'^index/$', 'celestial.views.complete_planet'),
 )
 
